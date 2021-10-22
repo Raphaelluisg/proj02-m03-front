@@ -1,49 +1,11 @@
-.a { 
-    text-decoration: none; 
-    color: white;
-}
-.a:visited { 
-    text-decoration: none;
- }
-.a:hover { 
-    text-decoration: none;
-    color: white; 
-}
-.a:focus { 
-    text-decoration: none;
- }
-.a:hover, .a:active { 
-    text-decoration: none; 
-}
 
-.b{
-    background-color: transparent;
-    border: none;
-    color:white;
-    margin-left: 10px
-}
 
-.react-responsive-modal-modal{
-    font-family: "Pacifico", cursive;
-}
-
-.react-responsive-modal-modal > h2 {
-   color: #383838;
-   font-size: 2rem;
-   margin-top: 15px;
-}
-
-.btn {
-    background: linear-gradient(
-      90deg,
-      rgb(235, 12, 255) 0%,
-      rgb(126, 2, 143) 150%
-    );
-    color: #383838;
-    margin-left: 5px;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #383838;
+.row{
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

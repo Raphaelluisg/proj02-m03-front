@@ -14,7 +14,6 @@ const TodolistView = (props) => {
 
     useEffect(() => {
         getTodolistById();
-
     }, []);
 
     const getTodolistById = async () => {
@@ -33,9 +32,9 @@ const TodolistView = (props) => {
     }
 
     return(
-        <div>
-            <div className="conteiner">
-                <div className="card notes">
+        <div className="container flex-grow-1 mt-5">
+            <div className="row">
+                <div className="col">
                     <h5 className="note">{ todolist.text }</h5>
                     <div className="btn-group mt-3 w-100 d-flex align-items-center justify-content-center">
                         <Link to={`/edit/${todolist._id}`}  className="btn btn-outline-info">Editar</Link>
@@ -44,9 +43,11 @@ const TodolistView = (props) => {
                 </div>
             </div>
             <Modal open={open} onClose={onCloseModal} center>
-                <h2>Do you really want to delete </h2>
-                <button className="btn btn-success" onClick={handleDelete}>Yes</button>
-                <button className="btn btn-danger" onClick={onCloseModal}>No</button>
+                <div className="modal">
+                    <h2>Do you really want to delete </h2>
+                    <button className="btn btn-success" onClick={handleDelete}>Yes</button>
+                    <button className="btn btn-danger" onClick={onCloseModal}>No</button>
+                </div>
             </Modal>
         </div>
     )

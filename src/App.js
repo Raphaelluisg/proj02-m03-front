@@ -8,7 +8,7 @@ import TodolistView from './pages/TodolistView/TodolistView';
 function App() {
   
   return (
-    <div className="Navbar">
+    <div className="App">
       <Header/>
         <Switch>
           <Route path="/" exact={true} component={Home}/>

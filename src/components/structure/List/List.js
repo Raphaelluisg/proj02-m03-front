@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
-import Api from '../List/List';
+import Api from '../../../api/Api';
 
 const List = () => {
     const [todolists, setTodolists] = useState([]);
