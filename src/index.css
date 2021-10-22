@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
+
+:root{
+    --primary: #ff0000;
+    --secondary: #005580;
+    --light: #d9d9d9;
+    --light-alt: #cce6ff;
+    --dark: #00001a;
+    --dark-alt: #2b2b3b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+}
+
+body{
+    background-color: var(--dark-alt);
+    color: var(--light);
+}
+
+.App{
+    padding: 32px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+h4{
+    font-size: 18px;
+    color: var(--light-alt);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.todo{
+    position: relative;
+    background-color: var(--dark);
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 24px 5px;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+.todo:hover{
+    opacity: 0.8;
+}
+
+.todo .checkbox{
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    border-radius: 999px;
+    background-color: var(--dark-alt);
+    transition: 0.4s;
+}
+
+.todo.is-complete .checkbox{
+    background-color: var(--primary);
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.todo .text{
+    font-size: 20px;
+}
+
+.todo.is-complete .text{
+    text-decoration: linear-through;
+}
+
+.todo .delete-todo{
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
